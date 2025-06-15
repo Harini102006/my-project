@@ -17,7 +17,7 @@ function Bill() {
     espresso: 0,
     cappuccino: 0,
     latte: 0,
-    samosa: 0,
+    samosa: 0, 
     smiles: 0,
     fries: 0,
   });
