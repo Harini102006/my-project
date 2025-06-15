@@ -1,0 +1,98 @@
+html, body, #root {
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+.App {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  text-align: left;
+  padding-top: 10px;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, p {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  margin-top: 40px;
+  flex-wrap: wrap; /* Responsive wrap */
+}
+
+.menu-item {
+  text-align: center;
+  max-width: 20px;
+  padding: 0px;
+}
+
+.menu-item img {
+  border-radius: 10px;
+  width: 150px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.menu-item img:hover {
+  transform: scale(1.05);
+}
+
+.menu-item p {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.price {
+  font-size: 1rem;
+  color: #6f4e37;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: rgb(38, 233, 20);
+}
+
+.button-group button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #6f4e37;
+  color: rgb(47, 226, 12);
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.button-group button:hover {
+  background-color: #563d2d;
+}
+
+.button-group span {
+  font-size: 1.2rem;
+  min-width: 30px;
+  display: inline-block;
+  text-align: center;
+}
