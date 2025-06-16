@@ -1,21 +1,19 @@
+// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Home';
+import { Routes, Route } from 'react-router-dom';
+import Hotellist from './Hotellist';
 import Menu from './Menu';
-import Payment from './Payment'; // ✅ Capital P, matches the filename exactly
-
+import RRMenu from './RRMenu';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Menu" element={<Menu />} />
-        <Route path="/payment" element={<Payment />} />
- {/* ✅ Fixed: Added Payment route */}
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Hotellist />} />
+      <Route path="/menu/:id" element={<Menu />} />
+      <Route path="/rr/:id" element={<RRMenu />} />
+    </Routes>
   );
 }
 
 export default App;
+

@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import download from './download.jpeg';
-import download1 from './download1.jpeg';
-import download2 from './download2.jpeg';
-import images from './images.jpeg';
-import images1 from './images1.jpeg';
-import images2 from './images2.jpeg';
+import img1 from './img1.jpg';
+import img2 from './img2.jpg';
+import img3 from './img3.jpg';
+import img4 from './img4.jpg';
+import img5 from './img5.jpg';
+import img6 from './img6.jpg';
 import bgImage from './assets/bck.jpg';
 
-function Menu() {
+export default function RRMenu() {
   const navigate = useNavigate();
+
   const [quantities, setQuantities] = useState({
     espresso: 0,
     cappuccino: 0,
@@ -69,9 +70,9 @@ function Menu() {
         color: 'black',
       }}
     >
-      <h1 style={{ backgroundColor: 'white', padding: '10px 20px', borderRadius: '10px' }}>
-        cofee-cofee-day
-      </h1>
+      <h1 style={{ backgroundColor: 'white', padding: '10px 20px', borderRadius: '10px' }}><i>
+        RR BRIYANI
+      </i></h1>
 
       {/* Scrollable Menu Items */}
       <div
@@ -86,10 +87,10 @@ function Menu() {
         }}
       >
         <div style={itemStyle}>
-          <img src={download} alt="Espresso" style={imageStyle} />
+          <img src={img3} alt="chicken briyani" style={imageStyle} />
           <div style={textStyle}>
-            <h3>Espresso</h3>
-            <p>$120</p>
+            <h3>chicken briyani</h3>
+            <p>$275</p>
             <div>
               <button onClick={() => removeItem('espresso')}>Remove</button>
               <span style={{ margin: '0 15px' }}>{quantities.espresso}</span>
@@ -99,10 +100,10 @@ function Menu() {
         </div>
 
         <div style={itemStyle}>
-          <img src={download1} alt="Cappuccino" style={imageStyle} />
+          <img src={img2} alt="mutton briyani" style={imageStyle} />
           <div style={textStyle}>
-            <h3>Cappuccino</h3>
-            <p>$150</p>
+            <h3>Mutton Briyani</h3>
+            <p>$365</p>
             <div>
               <button onClick={() => removeItem('cappuccino')}>Remove</button>
               <span style={{ margin: '0 15px' }}>{quantities.cappuccino}</span>
@@ -112,10 +113,10 @@ function Menu() {
         </div>
 
         <div style={itemStyle}>
-          <img src={download2} alt="Latte" style={imageStyle} />
+          <img src={img4} alt="Latte" style={imageStyle} />
           <div style={textStyle}>
-            <h3>Latte</h3>
-            <p>$140</p>
+            <h3>Chicken Gravy</h3>
+            <p>$400</p>
             <div>
               <button onClick={() => removeItem('latte')}>Remove</button>
               <span style={{ margin: '0 15px' }}>{quantities.latte}</span>
@@ -124,13 +125,11 @@ function Menu() {
           </div>
         </div>
 
-        
-
         <div style={itemStyle}>
-          <img src={images1} alt="Samosa" style={imageStyle} />
+          <img src={img5} alt="Samosa" style={imageStyle} />
           <div style={textStyle}>
-            <h3>Samosa</h3>
-            <p>$180</p>
+            <h3>Grill</h3>
+            <p>$360</p>
             <div>
               <button onClick={() => removeItem('samosa')}>Remove</button>
               <span style={{ margin: '0 15px' }}>{quantities.samosa}</span>
@@ -140,10 +139,10 @@ function Menu() {
         </div>
 
         <div style={itemStyle}>
-          <img src={images} alt="Smiles" style={imageStyle} />
+          <img src={img6} alt="Smiles" style={imageStyle} />
           <div style={textStyle}>
-            <h3>Smiles (4pcs)</h3>
-            <p>$100</p>
+            <h3>thandoori (4pcs)</h3>
+            <p>$400</p>
             <div>
               <button onClick={() => removeItem('smiles')}>Remove</button>
               <span style={{ margin: '0 15px' }}>{quantities.smiles}</span>
@@ -153,10 +152,10 @@ function Menu() {
         </div>
 
         <div style={itemStyle}>
-          <img src={images2} alt="Fries" style={imageStyle} />
+          <img src={img1} alt="Fries" style={imageStyle} />
           <div style={textStyle}>
-            <h3>French Fries</h3>
-            <p>$20</p>
+            <h3>mutton suka</h3>
+            <p>$650</p>
             <div>
               <button onClick={() => removeItem('fries')}>Remove</button>
               <span style={{ margin: '0 15px' }}>{quantities.fries}</span>
@@ -186,5 +185,3 @@ function Menu() {
     </div>
   );
 }
-
-export default Menu;
