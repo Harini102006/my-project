@@ -1,13 +1,13 @@
-// Home.js
-// src/Home.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import bgImage from './assets/bck.jpg';
 import logo from './logo.svg';
 
-
 function Home() {
   const navigate = useNavigate();
+  const goToHotelList = () => {
+    navigate('/Hotellist');
+  };
 
   return (
     <div
@@ -21,11 +21,16 @@ function Home() {
         paddingTop: '40px',
       }}
     >
-      <h1 style={{padding:'20px'}}><i>TastyTrack</i></h1>
+      <h1 style={{ padding: '20px' }}>
+        <i>TastyTrack</i>
+      </h1>
       <img src={logo} alt="logo" className="App-logo" />
-      <p style={{padding:'20px'}}><i><b>Good Food Good Mood</b></i></p>
+      <p style={{ padding: '20px' }}>
+        <i><b>Good Food Good Mood</b></i>
+      </p>
       <button
-        onClick={() => navigate('/hotellist')}
+         onClick={() => navigate('/hotellist')}
+ 
         style={{
           padding: '10px 20px',
           fontSize: '16px',
@@ -43,4 +48,3 @@ function Home() {
 }
 
 export default Home;
-

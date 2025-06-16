@@ -3,12 +3,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const hotels = [
-  { id: 1, name: 'cofee-cofee-day', location: 'Chennai', cuisine: 'South Indian' },
+  { id: 1, name: 'cofee-cofee-day', location: 'Chennai', cuisine: 'USA' },
   { id: 2, name: 'Sree Bhavan', location: 'Madurai', cuisine: 'North Indian' },
   { id: 3, name: 'Hotel Saravana Bhavan', location: 'Coimbatore', cuisine: 'Veg Meals' },
   { id: 4, name: 'Amman Restarunt', location: 'Chennai', cuisine: 'South Indian' },
   { id: 5, name: 'RR Briyani', location: 'Madurai', cuisine: 'North Indian' },
-  { id: 6, name: '12 o clock ', location: 'CoimbatoreMadurai', cuisine: 'Non-veg ' },
+  { id: 6, name: '12 o clock ', location: 'Madurai', cuisine: 'Non-veg ' },
 ];
 
 function Hotallist() {
